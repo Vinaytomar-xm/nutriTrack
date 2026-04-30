@@ -121,6 +121,7 @@ const DB = [
     { name: "Dark Chocolate", isDrink: false, cal100: 546, pro100: 5.0 },
     { name: "Plain Cake", isDrink: false, cal100: 347, pro100: 5.0 },
     { name: "Rasgulla", isDrink: false, cal100: 186, pro100: 5.0 },
+    { name: "Sugarcane Juice", isDrink: true, cal100: 100, pro100: 0.5 },
 ];
 
 /* STATE */
