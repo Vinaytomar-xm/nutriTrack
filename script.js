@@ -1,10 +1,4 @@
 
-/* =========================================================
-   FOOD DATABASE
-   isDrink: true  → unit selector shows ml / L
-   isDrink: false → unit selector shows g / kg
-   cal100 / pro100 = per 100g or per 100ml
-========================================================= */
 const DB = [
     // DRINKS
     { name: "Water", isDrink: true, cal100: 0, pro100: 0 },
