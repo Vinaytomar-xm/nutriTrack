@@ -11,11 +11,11 @@ const foodEntrySchema = new mongoose.Schema(
       match: [/^\d{4}-\d{2}-\d{2}$/, 'Date must be YYYY-MM-DD'],
       index: true,
     },
-    name:          { type: String, required: true, trim: true, maxlength: 100 },
+    name: { type: String, required: true, trim: true, maxlength: 100 },
     displayAmount: { type: String, required: true, trim: true },
-    calories:      { type: Number, required: true, min: 0 },
-    protein:       { type: Number, required: true, min: 0 },
-    isDrink:       { type: Boolean, default: false },
+    calories: { type: Number, required: true, min: 0 },
+    protein: { type: Number, required: true, min: 0 },
+    isDrink: { type: Boolean, default: false },
     loggedAt: {
       type: String,
       default: () => new Date().toLocaleTimeString('en-IN', {

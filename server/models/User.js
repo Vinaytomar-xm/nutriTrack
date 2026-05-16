@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const bcrypt   = require('bcryptjs');
+const bcrypt = require('bcryptjs');
 
 const userSchema = new mongoose.Schema(
   {
@@ -18,7 +18,7 @@ const userSchema = new mongoose.Schema(
     },
     settings: {
       calGoal: { type: Number, default: 2000, min: 500, max: 6000 },
-      proGoal: { type: Number, default: 100,  min: 10,  max: 500  },
+      proGoal: { type: Number, default: 100, min: 10, max: 500 },
     },
   },
   { timestamps: true }

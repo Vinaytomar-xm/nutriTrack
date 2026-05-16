@@ -1,8 +1,8 @@
-const express   = require('express');
-const router    = express.Router();
-const jwt       = require('jsonwebtoken');
+const express = require('express');
+const router = express.Router();
+const jwt = require('jsonwebtoken');
 const { body, validationResult } = require('express-validator');
-const User      = require('../models/User');
+const User = require('../models/User');
 const { protect } = require('../middleware/auth');
 
 const makeToken = (id) =>
@@ -79,7 +79,7 @@ router.get('/me', protect, (req, res) =>
 router.put('/settings', protect,
   [
     body('calGoal').isInt({ min: 500, max: 6000 }).withMessage('Calorie goal: 500–6000'),
-    body('proGoal').isInt({ min: 10,  max: 500  }).withMessage('Protein goal: 10–500 g'),
+    body('proGoal').isInt({ min: 10, max: 500 }).withMessage('Protein goal: 10–500 g'),
   ],
   async (req, res) => {
     const errors = validationResult(req);
