@@ -74,10 +74,10 @@ export default function Settings() {
       <div className="stg">
         <div className="stl">Account</div>
         <div className="sti">
-          <div><div className="ti">Username</div><div className="de">{user?.username}</div></div>
+          <div><div className="ti">Username...</div><div className="de">{user?.username}</div></div>
         </div>
         <div className="sti">
-          <div><div className="ti">Email</div><div className="de">{user?.email}</div></div>
+          <div><div className="ti">Email...</div><div className="de">{user?.email}</div></div>
         </div>
         <div className="sti">
           <div>
